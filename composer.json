@@ -1,5 +1,5 @@
 {
-  "name": "giedrius-slegeris/openweathermap-store",
+  "name": "giedrius-slegeris/proto-definitions-php",
   "description": "A client and stub files for the OpenWeatherMap API",
   "type": "library",
   "autoload": {
