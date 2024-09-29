@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Openweathermap_store;
+namespace Openweathermapstore;
 
 /**
  */
@@ -17,16 +17,16 @@ class OpenWeatherMapStoreServerClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Openweathermap_store\GetWeatherDataRequest $argument input argument
+     * @param \Openweathermapstore\GetWeatherDataRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function GetWeatherData(\Openweathermap_store\GetWeatherDataRequest $argument,
+    public function GetWeatherData(\Openweathermapstore\GetWeatherDataRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/openweathermap_store.OpenWeatherMapStoreServer/GetWeatherData',
+        return $this->_simpleRequest('/openweathermapstore.OpenWeatherMapStoreServer/GetWeatherData',
         $argument,
-        ['\Openweathermap_store\GetWeatherDataResponse', 'decode'],
+        ['\Openweathermapstore\GetWeatherDataResponse', 'decode'],
         $metadata, $options);
     }
 

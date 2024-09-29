@@ -9,7 +9,9 @@
   },
   "require": {
     "google/protobuf": "^3.20",
-    "grpc/grpc": "^1.50"
+    "grpc/grpc": "^1.50",
+    "ext-grpc": "*",
+    "ext-protobuf": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
