@@ -1,0 +1,14 @@
+{
+  "name": "giedrius-slegeris/openweathermap-store",
+  "description": "A client and stub files for the OpenWeatherMap API",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "OpenWeatherMapStore\\": "OpenWeatherMapStore/"
+    }
+  },
+  "require": {
+    "google/protobuf": "^3.20",
+    "grpc/grpc": "^1.50"
+  }
+}
