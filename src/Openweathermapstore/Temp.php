@@ -53,7 +53,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      *     @type float $Morn
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -72,9 +73,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDay($var)
+    public function setDay(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Day = $var;
 
         return $this;
@@ -94,9 +94,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setMin($var)
+    public function setMin(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Min = $var;
 
         return $this;
@@ -116,9 +115,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setMax($var)
+    public function setMax(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Max = $var;
 
         return $this;
@@ -138,9 +136,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setNight($var)
+    public function setNight(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Night = $var;
 
         return $this;
@@ -160,9 +157,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setEve($var)
+    public function setEve(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Eve = $var;
 
         return $this;
@@ -182,9 +178,8 @@ class Temp extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setMorn($var)
+    public function setMorn(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Morn = $var;
 
         return $this;

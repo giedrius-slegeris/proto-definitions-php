@@ -98,7 +98,8 @@ class Current extends \Google\Protobuf\Internal\Message
      *     @type \Openweathermapstore\Weather[] $Weather
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -117,7 +118,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDt($var)
+    public function setDt(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Dt = $var;
@@ -139,7 +140,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSunrise($var)
+    public function setSunrise(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Sunrise = $var;
@@ -161,7 +162,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSunset($var)
+    public function setSunset(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Sunset = $var;
@@ -183,9 +184,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTemp($var)
+    public function setTemp(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Temp = $var;
 
         return $this;
@@ -205,9 +205,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFeelsLike($var)
+    public function setFeelsLike(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->FeelsLike = $var;
 
         return $this;
@@ -227,7 +226,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPressure($var)
+    public function setPressure(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Pressure = $var;
@@ -249,7 +248,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Humidity = $var;
@@ -271,9 +270,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDewPoint($var)
+    public function setDewPoint(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->DewPoint = $var;
 
         return $this;
@@ -293,9 +291,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setUvi($var)
+    public function setUvi(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Uvi = $var;
 
         return $this;
@@ -315,7 +312,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setClouds($var)
+    public function setClouds(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Clouds = $var;
@@ -337,7 +334,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVisibility($var)
+    public function setVisibility(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Visibility = $var;
@@ -359,9 +356,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setWindSpeed($var)
+    public function setWindSpeed(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->WindSpeed = $var;
 
         return $this;
@@ -381,7 +377,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWindDeg($var)
+    public function setWindDeg(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->WindDeg = $var;
@@ -403,9 +399,8 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setWindGust($var)
+    public function setWindGust(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->WindGust = $var;
 
         return $this;
@@ -425,7 +420,7 @@ class Current extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Weather[] $var
      * @return $this
      */
-    public function setWeather($var)
+    public function setWeather(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Weather::class);
         $this->Weather = $arr;

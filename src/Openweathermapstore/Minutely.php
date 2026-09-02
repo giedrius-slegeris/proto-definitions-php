@@ -33,7 +33,8 @@ class Minutely extends \Google\Protobuf\Internal\Message
      *     @type float $Precipitation
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -52,7 +53,7 @@ class Minutely extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDt($var)
+    public function setDt(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Dt = $var;
@@ -74,9 +75,8 @@ class Minutely extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPrecipitation($var)
+    public function setPrecipitation(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Precipitation = $var;
 
         return $this;

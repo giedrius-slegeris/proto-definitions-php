@@ -43,7 +43,8 @@ class Weather extends \Google\Protobuf\Internal\Message
      *     @type string $Icon
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -62,7 +63,7 @@ class Weather extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setID($var)
+    public function setID(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ID = $var;
@@ -84,9 +85,9 @@ class Weather extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMain($var)
+    public function setMain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Main = $var;
 
         return $this;
@@ -106,9 +107,9 @@ class Weather extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Description = $var;
 
         return $this;
@@ -128,9 +129,9 @@ class Weather extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Icon = $var;
 
         return $this;

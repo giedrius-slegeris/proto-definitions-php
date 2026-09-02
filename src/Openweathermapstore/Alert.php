@@ -53,7 +53,8 @@ class Alert extends \Google\Protobuf\Internal\Message
      *     @type string[] $Tags
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -72,9 +73,9 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSenderName($var)
+    public function setSenderName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->SenderName = $var;
 
         return $this;
@@ -94,9 +95,9 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEvent($var)
+    public function setEvent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Event = $var;
 
         return $this;
@@ -116,7 +117,7 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStart($var)
+    public function setStart(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->Start = $var;
@@ -138,7 +139,7 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEnd($var)
+    public function setEnd(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->End = $var;
@@ -160,9 +161,9 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Description = $var;
 
         return $this;
@@ -182,7 +183,7 @@ class Alert extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setTags($var)
+    public function setTags(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->Tags = $arr;

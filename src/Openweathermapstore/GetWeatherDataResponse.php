@@ -73,7 +73,8 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      *     @type \Openweathermapstore\Alert[] $Alerts
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -92,7 +93,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLastUpdated($var)
+    public function setLastUpdated(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->LastUpdated = $var;
@@ -114,9 +115,8 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLat($var)
+    public function setLat(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Lat = $var;
 
         return $this;
@@ -136,9 +136,8 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLon($var)
+    public function setLon(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Lon = $var;
 
         return $this;
@@ -158,9 +157,9 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTimezone($var)
+    public function setTimezone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Timezone = $var;
 
         return $this;
@@ -180,7 +179,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimezoneOffset($var)
+    public function setTimezoneOffset(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->TimezoneOffset = $var;
@@ -212,9 +211,8 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Current $var
      * @return $this
      */
-    public function setCurrent($var)
+    public function setCurrent(\Openweathermapstore\Current|null $var)
     {
-        GPBUtil::checkMessage($var, \Openweathermapstore\Current::class);
         $this->Current = $var;
 
         return $this;
@@ -234,7 +232,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Minutely[] $var
      * @return $this
      */
-    public function setMinutely($var)
+    public function setMinutely(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Minutely::class);
         $this->Minutely = $arr;
@@ -256,7 +254,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Hourly[] $var
      * @return $this
      */
-    public function setHourly($var)
+    public function setHourly(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Hourly::class);
         $this->Hourly = $arr;
@@ -278,7 +276,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Daily[] $var
      * @return $this
      */
-    public function setDaily($var)
+    public function setDaily(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Daily::class);
         $this->Daily = $arr;
@@ -300,7 +298,7 @@ class GetWeatherDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Alert[] $var
      * @return $this
      */
-    public function setAlerts($var)
+    public function setAlerts(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Alert::class);
         $this->Alerts = $arr;

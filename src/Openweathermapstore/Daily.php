@@ -118,7 +118,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      *     @type float $Uvi
      * }
      */
-    public function __construct($data = NULL) {
+    public function __construct($data = null)
+    {
         \GPBMetadata\Openweathermapstore::initOnce();
         parent::__construct($data);
     }
@@ -137,7 +138,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDt($var)
+    public function setDt(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Dt = $var;
@@ -159,7 +160,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSunrise($var)
+    public function setSunrise(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Sunrise = $var;
@@ -181,7 +182,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSunset($var)
+    public function setSunset(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Sunset = $var;
@@ -203,7 +204,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoonrise($var)
+    public function setMoonrise(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Moonrise = $var;
@@ -225,7 +226,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoonset($var)
+    public function setMoonset(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Moonset = $var;
@@ -247,9 +248,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setMoonPhase($var)
+    public function setMoonPhase(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->MoonPhase = $var;
 
         return $this;
@@ -279,9 +279,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Temp $var
      * @return $this
      */
-    public function setTemp($var)
+    public function setTemp(\Openweathermapstore\Temp|null $var)
     {
-        GPBUtil::checkMessage($var, \Openweathermapstore\Temp::class);
         $this->Temp = $var;
 
         return $this;
@@ -311,9 +310,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\FeelsLike $var
      * @return $this
      */
-    public function setFeelsLike($var)
+    public function setFeelsLike(\Openweathermapstore\FeelsLike|null $var)
     {
-        GPBUtil::checkMessage($var, \Openweathermapstore\FeelsLike::class);
         $this->FeelsLike = $var;
 
         return $this;
@@ -333,7 +331,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPressure($var)
+    public function setPressure(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Pressure = $var;
@@ -355,7 +353,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Humidity = $var;
@@ -377,9 +375,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDewPoint($var)
+    public function setDewPoint(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->DewPoint = $var;
 
         return $this;
@@ -399,9 +396,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setWindSpeed($var)
+    public function setWindSpeed(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->WindSpeed = $var;
 
         return $this;
@@ -421,7 +417,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWindDeg($var)
+    public function setWindDeg(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->WindDeg = $var;
@@ -443,9 +439,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setWindGust($var)
+    public function setWindGust(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->WindGust = $var;
 
         return $this;
@@ -465,7 +460,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param \Openweathermapstore\Weather[] $var
      * @return $this
      */
-    public function setWeather($var)
+    public function setWeather(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Openweathermapstore\Weather::class);
         $this->Weather = $arr;
@@ -487,7 +482,7 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setClouds($var)
+    public function setClouds(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->Clouds = $var;
@@ -509,9 +504,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPop($var)
+    public function setPop(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Pop = $var;
 
         return $this;
@@ -531,9 +525,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setRain($var)
+    public function setRain(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Rain = $var;
 
         return $this;
@@ -553,9 +546,8 @@ class Daily extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setUvi($var)
+    public function setUvi(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->Uvi = $var;
 
         return $this;

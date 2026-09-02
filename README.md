@@ -9,6 +9,8 @@ in [giedrius-slegeris/proto-definitions](https://github.com/giedrius-slegeris/pr
 
 ## Install
 
+Requires PHP 8.4 or newer.
+
 This package is not on Packagist, so add it as a VCS repository:
 
 ```sh
