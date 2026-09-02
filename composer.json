@@ -1,19 +1,19 @@
 {
-  "name": "giedrius-slegeris/proto-definitions-php",
-  "description": "A client and stub files for the OpenWeatherMap API",
-  "type": "library",
-  "autoload": {
-    "psr-4": {
-      "OpenWeatherMapStore\\": "OpenWeatherMapStore/",
-      "GPBMetadata\\": "OpenWeatherMapStore/GPBMetadata/"
+    "name": "giedrius-slegeris/proto-definitions-php",
+    "description": "Generated PHP classes and gRPC client stubs for the proto-definitions API.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "google/protobuf": "^4.29",
+        "grpc/grpc": "^1.57"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
     }
-  },
-  "require": {
-    "google/protobuf": "^3.20",
-    "grpc/grpc": "^1.50",
-    "ext-grpc": "*",
-    "ext-protobuf": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
 }

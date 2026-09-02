@@ -20,7 +20,7 @@ class OpenWeatherMapStoreServerClient extends \Grpc\BaseStub {
      * @param \Openweathermapstore\GetWeatherDataRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Openweathermapstore\GetWeatherDataResponse>
      */
     public function GetWeatherData(\Openweathermapstore\GetWeatherDataRequest $argument,
       $metadata = [], $options = []) {

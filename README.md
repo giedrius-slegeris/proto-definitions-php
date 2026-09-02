@@ -1,1 +1,40 @@
-compiled protobuf package to plugin into PHP applications 
+# proto-definitions-php
+
+Generated PHP classes and gRPC client stubs for the protocol buffer definitions
+in [giedrius-slegeris/proto-definitions](https://github.com/giedrius-slegeris/proto-definitions).
+
+> **Do not edit this repository by hand.** Every file here is produced by
+> `make` in the `proto-definitions` repository and overwritten on the next
+> publish. Change the `.proto` files there instead.
+
+## Install
+
+This package is not on Packagist, so add it as a VCS repository:
+
+```sh
+composer config repositories.proto-definitions-php vcs https://github.com/giedrius-slegeris/proto-definitions-php
+composer require giedrius-slegeris/proto-definitions-php:dev-main
+```
+
+The `grpc/grpc` dependency needs the `grpc` PHP extension:
+
+```sh
+pecl install grpc
+```
+
+## Use
+
+```php
+$client = new Openweathermapstore\OpenWeatherMapStoreServerClient(
+    'localhost:50051',
+    ['credentials' => Grpc\ChannelCredentials::createInsecure()],
+);
+
+[$response, $status] = $client
+    ->GetWeatherData(new Openweathermapstore\GetWeatherDataRequest())
+    ->wait();
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
